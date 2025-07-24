@@ -1,6 +1,6 @@
 Análisis de Datos de Ventas de Tiendas
 
-![alt text] (https://bing.com/th/id/BCO.5e1e499b-535e-48c9-b590-5d9fe0e8f23e.png)
+https://bing.com/th/id/BCO.5e1e499b-535e-48c9-b590-5d9fe0e8f23e.png
 
 
 
