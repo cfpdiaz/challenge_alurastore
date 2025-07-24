@@ -1,15 +1,12 @@
-Análisis de Datos de Ventas de Tiendas
+# Análisis de Datos de Ventas de Tiendas
 
-https://bing.com/th/id/BCO.5e1e499b-535e-48c9-b590-5d9fe0e8f23e.png
-
-
+![Banner de Análisis de Datos](https://bing.com/th/id/BCO.5e1e499b-535e-48c9-b590-5d9fe0e8f23e.png)
 
 Este documento describe un análisis básico de datos de ventas de múltiples tiendas, utilizando las librerías pandas para la manipulación de datos y matplotlib para la visualización.
 
-1. Importación de Datos
+## 1. Importación de Datos
 
-Python
-
+```python
 import pandas as pd
 
 url = "https://raw.githubusercontent.com/alura-es-cursos/challenge1-data-science-latam/refs/heads/main/base-de-datos-challenge1-latam/tienda_1%20.csv"
@@ -35,8 +32,7 @@ Este primer bloque de código se encarga de cargar los conjuntos de datos de cua
     Finalmente, tienda.head() muestra las primeras filas del DataFrame de la primera tienda, lo que permite una inspección rápida de su estructura y contenido.
 
 2. Análisis de Facturación
-
-Python
+python
 
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -75,8 +71,7 @@ En esta sección, el objetivo es calcular y visualizar el ingreso total por cada
     Finalmente, se intenta generar un histograma del 'Ingreso Total'. Es importante notar que la variable df_ingresos no está definida en el código proporcionado, lo que podría causar un error en esta parte del script. La intención es visualizar la distribución de los ingresos si se tuviera un DataFrame adecuado.
 
 3. Ventas por Categoría (Visualizaciones Placeholder)
-
-Python
+python
 
 # @title Precio vs Costo de envío
 from matplotlib import pyplot as plt
@@ -97,8 +92,7 @@ Estas dos celdas muestran visualizaciones potenciales relacionadas con las venta
     Al igual que en el caso anterior, las variables product_cost no están definidas en el fragmento de código completo, lo que indica que estas visualizaciones dependen de un procesamiento de datos previo que no se incluyó.
 
 4. Calificación Promedio de la Tienda (Visualización Placeholder)
-
-Python
+python
 
 # @title Calificación
 from matplotlib import pyplot as plt
@@ -112,8 +106,7 @@ Este bloque está diseñado para visualizar la distribución de las calificacion
     Similar a los casos anteriores, average_rating no está definida en el código proporcionado, por lo que su ejecución requeriría código adicional para calcular las calificaciones promedio.
 
 5. Productos Más y Menos Vendidos (Visualización Placeholder)
-
-Python
+python
 
 # @title Cantidad Vendida
 from matplotlib import pyplot as plt
@@ -127,8 +120,7 @@ Esta sección busca visualizar la cantidad de productos vendidos.
     De nuevo, la variable most_sold_products no está definida, lo que sugiere que se necesita un paso previo para identificar y procesar los productos más y menos vendidos.
 
 6. Envío Promedio por Tienda
-
-Python
+python
 
 average_shipping_cost = all_stores.groupby('store')['Costo de envío'].mean().reset_index()
 
@@ -149,4 +141,6 @@ Esta última sección se enfoca en calcular y visualizar el costo de envío prom
 
     Es importante destacar que la variable all_stores no está definida en el código que me proporcionaste. Para que este bloque funcione, sería necesario combinar los DataFrames individuales de cada tienda (tienda, tienda2, etc.) en un solo DataFrame llamado all_stores.
 
-En resumen, este código sienta las bases para un análisis de ventas de múltiples tiendas, centrándose en la facturación, los costos de envío y algunas visualizaciones clave. Ten en cuenta que algunas variables y pasos de pre-procesamiento no están explícitamente definidos en el fragmento proporcionado.
+Resumen
+
+Este código sienta las bases para un análisis de ventas de múltiples tiendas, centrándose en la facturación, los costos de envío y algunas visualizaciones clave. Ten en cuenta que algunas variables y pasos de pre-procesamiento no están explícitamente definidos en el fragmento proporcionado.
